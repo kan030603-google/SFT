@@ -1,0 +1,19 @@
+{
+  "label": "lora",
+  "file": "D:\\DATA\\PROJECT\\ai_project\\self\\SFT\\out_lora.jsonl",
+  "match_mode": "loose",
+  "samples": 500,
+  "tp": 1479,
+  "fp": 1675,
+  "fn": 1153,
+  "macro": {
+    "precision": 0.544873309121219,
+    "recall": 0.590848190844243,
+    "f1": 0.5456357393792398
+  },
+  "micro": {
+    "precision": 0.4689283449587825,
+    "recall": 0.5619300911854104,
+    "f1": 0.5112340131351539
+  }
+}

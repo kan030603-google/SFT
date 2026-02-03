@@ -1,0 +1,19 @@
+{
+  "label": "base",
+  "file": "D:\\DATA\\PROJECT\\ai_project\\self\\SFT\\out.jsonl",
+  "match_mode": "loose",
+  "samples": 500,
+  "tp": 1336,
+  "fp": 2314,
+  "fn": 1296,
+  "macro": {
+    "precision": 0.3972392756725653,
+    "recall": 0.5614816458903411,
+    "f1": 0.43241966998708414
+  },
+  "micro": {
+    "precision": 0.36602739726027395,
+    "recall": 0.5075987841945289,
+    "f1": 0.4253422476918179
+  }
+}

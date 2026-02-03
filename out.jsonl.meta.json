@@ -1,0 +1,22 @@
+{
+  "input": "D:\\DATA\\PROJECT\\ai_project\\self\\SFT\\data\\keywords_data_test.jsonl",
+  "output": "D:\\DATA\\PROJECT\\ai_project\\self\\SFT\\out.jsonl",
+  "model_path": "D:/DATA/MODEL/qwen/unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "adapter_path": "D:/DATA/MODEL/LoRA2qwen/outputs/Qwen3-8B-sft-lora-adapter-unsloth",
+  "enable_adapter": false,
+  "seed": 3407,
+  "system_prompt": "你是关键词抽取助手。\n只输出标记区间中的关键词列表，不要输出任何解释或多余文字。\n输出格式固定为：\nBEGIN_KEYWORDS\nkw1;kw2;kw3\nEND_KEYWORDS\n关键词要求：\n1) 每个词必须是原文中的连续子串，不得改写或编造。\n2) 禁止输出描述性短语，如“结论”“方法”“提示”“部分提到”等。\n3) 输出数量限制为 3-8 个，按重要性排序。若不足 3 个，只输出真实存在的子串。\n\n示例1\n输入：关键词识别：\n题目：锂离子电池快充机理\n摘要：本文研究快充过程中锂析出与电解液分解，提出石墨负极表面改性和电解液添加剂策略。\n输出：\nBEGIN_KEYWORDS\n锂离子电池;快充;锂析出;石墨负极;电解液添加剂\nEND_KEYWORDS\n\n示例2\n输入：关键词识别：\n目的 研究不同年龄心肌炎患儿的心率及心率变异性(HRV)改变。\n方法 对120例心肌炎患儿进行24 h全程动态心电图检查。\n结论 心肌炎患儿的HRV普遍降低。\n输出：\nBEGIN_KEYWORDS\n心肌炎患儿;心率;心率变异性;HRV;动态心电图检查\nEND_KEYWORDS\n",
+  "gen_params": {
+    "max_seq_length": 2048,
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "load_in_4bit": true,
+    "load_in_8bit": false,
+    "device_map": "cuda:0"
+  },
+  "timestamp": "2026-01-17 20:10:15"
+}
